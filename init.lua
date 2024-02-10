@@ -6,7 +6,7 @@ vim.opt.relativenumber = true	-- relative numbers to the active line
 vim.opt.tabstop = 4 			-- indentation size
 vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
-vim.opt.expandtab = true     -- expand \t to spaces
+vim.opt.expandtab = true        -- expand \t to spaces
 
 vim.opt.smartindent = true		-- indent relative to the above line
 
@@ -24,3 +24,4 @@ vim.opt.clipboard:append('unnamedplus')    -- use system clipboard
 
 vim.api.nvim_set_keymap('n', 'W', 'b', {noremap = true})	-- remap 'W' to beginning back word
 vim.api.nvim_set_keymap('n', 'E', 'ge', {noremap = true})	-- remap 'E' to end back word
+vim.api.nvim_set_keymap('n', '<Tab>', '<C-w><C-w>', {noremap = true})    -- remap '<Tab>' to switch windows
