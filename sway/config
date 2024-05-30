@@ -1,0 +1,34 @@
+# mod to Super Key
+set $mod Mod4
+set $term foot
+
+# Display Settings
+output Virtual-1 {
+    background /usr/share/backgrounds/default.png fill
+    resolution 1920x1080
+    position 0,0
+}
+
+# Startup Applications
+exec_always pkill -x waybar; waybar
+
+# Workspaces
+workspace 1 output *
+workspace 2 output *
+workspace 3 output *
+
+# Keyboard Switching Workspaces
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+
+# Mouse Wheel Switching Workspaces
+bindsym $mod+button4 workspace prev
+bindsym $mod+button5 workspace next
+
+# Global Shortcuts
+bindsym $mod+t exec $term
+bindsym $mot+space exec rofi -show drun
+# TODO: find out why Escape is not working
+# bindsym $mod+Escape kill
+bindsym $mod+Shift+q kill
