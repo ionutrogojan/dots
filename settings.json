@@ -7,39 +7,42 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
-    "vim_mode": true,
-    "ui_font_size": 16,
-    "buffer_font_size": 16,
-    "theme": {
-      "mode": "system",
-      "light": "One Light",
-      "dark": "Gruvbox Dark Hard"
-    },
-    "hover_popover_enabled": true,
-    "restore_on_startup": "last_workspace",
-    "vertical_scroll_margin": 8,
-    "relative_line_numbers": true,
-    "outline_panel": {
-      "button": false
-    },
-    "collaboration_panel": {
-      "button": false
-    },
-    "chat_panel": {
-      "button": false
-    },
-    "assistant": {
-      "version": "1",
-      "enabled": false,
-      "button": false
-    },
-    "auto_install_extensions": {
-      "astro": false,
-      "blade": false,
-      "elixir": false
-    },
-    "features": {
-      "inline_completion_provider": "none"
-    }
-  }
-  
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Atelier Forest Dark"
+  },
+  "ui_font_family": "Fira Sans",
+  "buffer_font_family": "Fira Mono",
+  "hover_popover_enabled": true,
+  "restore_on_startup": "last_workspace",
+  "vertical_scroll_margin": 8,
+  "relative_line_numbers": true,
+  "outline_panel": {
+    "button": false
+  },
+  "collaboration_panel": {
+    "button": false
+  },
+  "chat_panel": {
+    "button": false
+  },
+  "assistant": {
+    "version": "2",
+    "enabled": false,
+    "button": false
+  },
+  "auto_install_extensions": {
+    "astro": false,
+    "blade": false,
+    "elixir": false
+  },
+  "features": {
+    "inline_completion_provider": "none"
+  },
+  "show_whitespaces": "selection",
+  "hard_tabs": false
+}
